@@ -15,63 +15,14 @@ Built with the Next.js App Router, TypeScript & Tailwind
 - Full comment functionality with nested replies
 - ... and much more
 
-## Getting started
-
-To get started with this project, run
-
-```bash
-  git clone -b starter-code https://github.com/joschan21/breadit.git
-```
-
-and copy these .env.example variables into a separate .env file:
-
-```bash
-DATABASE_URL=
-NEXTAUTH_SECRET=
-
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-
-UPLOADTHING_SECRET=
-UPLOADTHING_APP_ID=
-
-REDIS_URL=
-REDIS_SECRET=
-```
-
-if you'd like, you can paste this snippet for quick component creation (optional):
-
-```typescript
-// vscode settings -> user snippets -> typescriptreact.json
-```
-
-```json
-"Typescript React Function Component": {
-    "prefix": "fc",
-    "body": [
-      "import { FC } from 'react'",
-      "",
-      "interface ${TM_FILENAME_BASE}Props {",
-      "  $1",
-      "}",
-      "",
-      "const $TM_FILENAME_BASE: FC<${TM_FILENAME_BASE}Props> = ({$2}) => {",
-      "  return <div>$TM_FILENAME_BASE</div>",
-      "}",
-      "",
-      "export default $TM_FILENAME_BASE"
-    ],
-    "description": "Typescript React Function Component"
-  },
-```
-
-and that's all you need to get started!
-
-## Acknowledgements
-
-- [Upstash Redis](https://upstash.com/?utm_source=Josh2) for making this possible
-- [Code with Antonio](https://www.youtube.com/@codewithantonio) for thumbnail design inspiration
-- Shadcn's [Taxonomy respository](https://github.com/shadcn/taxonomy) for showcasing the post editor
+  
+1. A web application inspired by the popular platform Reddit.
+2. Allows users to create accounts and log in to participate in the cohort.
+3. Features a front page with a feed of posts from various cohorts.
+4. Users can create new posts, upvote/downvote, and comment on existing posts.
+5. Supports the creation of custom topics based on specific interests.
+6. Each topic has its own page where users can submit posts and engage in discussions.
+7. User can upload files as well
 
 ## License
 
