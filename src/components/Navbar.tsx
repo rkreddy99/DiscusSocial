@@ -2,6 +2,7 @@ import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 import Link from "next/link";
 import { Icons } from "./Icons";
+import Image from "next/image";
 import { buttonVariants } from "./ui/Button";
 import { UserAccountNav } from "./UserAccountNav";
 import SearchBar from "./SearchBar";
@@ -13,7 +14,14 @@ const Navbar = async () => {
       <div className="container max-w-7xl h-full mx-auto flex items-center justify-between gap-2">
         {/* logo */}
         <Link href="/" className="flex gap-2 items-center">
-          <Icons.logo className="h-8 w-8 sm:h-6 sm:w-6" />
+          {/* <Icons.logo /> */}
+          <Image
+            className="h-8 w-8 sm:h-6 sm:w-6"
+            src={"/favicon.png"}
+            alt="logo"
+            width={100}
+            height={100}
+          />
           <p className="hidden text-zinc-700 text-sm font-medium md:block">
             DiscusSocial
           </p>
